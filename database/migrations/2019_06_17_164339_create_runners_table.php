@@ -15,6 +15,8 @@ class CreateRunnersTable extends Migration
     {
         Schema::create('runners', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('src');
             $table->timestamps();
         });
     }
