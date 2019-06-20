@@ -13,7 +13,7 @@ return [
     */
    
     'supportsCredentials' => true,
-    'allowedOrigins' => ['http://localhost:*', 'http://192.168.1.8:3000', 'https://mogataro-nuxt-sample-app.herokuapp.com'],
+    'allowedOrigins' => ['*', 'http://localhost:*', 'http://192.168.1.8:3000', 'https://mogataro-nuxt-sample-app.herokuapp.com'],
     'allowedOriginsPatterns' => [],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['*'],

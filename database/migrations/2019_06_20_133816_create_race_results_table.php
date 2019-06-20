@@ -15,6 +15,11 @@ class CreateRaceResultsTable extends Migration
     {
         Schema::create('race_results', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('rank1');
+            $table->string('rank2');
+            $table->string('rank3');
+            $table->string('rank4');
+            $table->string('rank5');
             $table->timestamps();
         });
     }
