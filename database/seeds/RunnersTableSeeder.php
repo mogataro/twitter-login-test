@@ -14,23 +14,33 @@ class RunnersTableSeeder extends Seeder
         DB::table('runners')->insert([
             [
               'name' => 'cat1',
-              'src' => '@/assets/img/gif/flyingneko.gif'
+              'src' => 'flyingneko.gif',
+              'created_at' => date("Y-m-d H:i:s"),
+              'updated_at' => date("Y-m-d H:i:s")
             ],
             [
               'name' => 'dog1',
-              'src' => '@/assets/img/gif/runningdog.gif'
+              'src' => 'runningdog.gif',
+              'created_at' => date("Y-m-d H:i:s"),
+              'updated_at' => date("Y-m-d H:i:s")
             ],
             [
               'name' => 'cat2',
-              'src' => '@/assets/img/gif/flyingneko.gif'
+              'src' => 'flyingneko.gif',
+              'created_at' => date("Y-m-d H:i:s"),
+              'updated_at' => date("Y-m-d H:i:s")
             ],
             [
               'name' => 'dog2',
-              'src' => '@/assets/img/gif/runningdog.gif'
+              'src' => 'runningdog.gif',
+              'created_at' => date("Y-m-d H:i:s"),
+              'updated_at' => date("Y-m-d H:i:s")
             ],
             [
               'name' => 'cat3',
-              'src' => '@/assets/img/gif/flyingneko.gif'
+              'src' => 'flyingneko.gif',
+              'created_at' => date("Y-m-d H:i:s"),
+              'updated_at' => date("Y-m-d H:i:s")
             ]
           ]);
     }

@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['middleware' => ['api']], function(){
     Route::resource('articles', 'Api\ArticlesController', ['except' => ['create', 'edit']]);
+    Route::resource('runners', 'Api\RunnersController', ['except' => ['create', 'edit']]);
 });
