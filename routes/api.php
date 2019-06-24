@@ -23,4 +23,5 @@ Route::group(['middleware' => ['api']], function(){
     Route::resource('articles', 'Api\ArticlesController', ['except' => ['create', 'edit']]);
     Route::resource('runners', 'Api\RunnersController', ['except' => ['create', 'edit']]);
     Route::resource('raceresult', 'Api\RaceResultsController', ['except' => ['create', 'update', 'edit']]);
+    Route::resource('achievement', 'Api\AchievementController', ['except' => ['create', 'edit']]);
 });
