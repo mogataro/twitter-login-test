@@ -11,11 +11,11 @@ class RaceResultsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response 最新10レコードを返す
+     * @return \Illuminate\Http\Response 最新レコードを返す
      */
     public function index()
     {
-        $result = RaceResult::latest()->take(10)->get()->sortBy('created_at')->values();
+        $result = RaceResult::latest()->take(3)->get()->sortBy('created_at')->values();
         return $result;
     }
 

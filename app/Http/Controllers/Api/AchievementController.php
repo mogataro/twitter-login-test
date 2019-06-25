@@ -20,7 +20,7 @@ class AchievementController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * updateOrCreate
      *
      * @param  \Illuminate\Http\Request  $request [{runner_id: 1, rank: 3}]
      * @return \Illuminate\Http\Response
@@ -92,27 +92,6 @@ class AchievementController extends Controller
     public function edit($id)
     {
         //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        $achievement = Article::find($id);
-        // $achievement->runner_id = $request->rank1;
-        // $achievement->race_count = $request->rank2;
-        // $achievement->rank1_count = $request->rank3;
-        // $achievement->rank2_count = $request->rank4;
-        // $achievement->rank3_count = $request->rank5;
-        // $achievement->rank4_count = $request->rank5;
-        // $achievement->rank5_count = $request->rank5;
-        // $achievement->win_rate = $request->rank5;
-        // $achievement->save();
     }
 
     /**
