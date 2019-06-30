@@ -22,7 +22,7 @@ class CreateAchievementsTable extends Migration
             $table->integer('rank3_count')->unsigned();
             $table->integer('rank4_count')->unsigned();
             $table->integer('rank5_count')->unsigned();
-            $table->double('win_rate', 4, 3)->unsigned();
+            $table->double('win_rate', 4, 1)->unsigned();
             $table->timestamps();
 
             // 外部キー

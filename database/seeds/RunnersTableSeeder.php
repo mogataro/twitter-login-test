@@ -13,32 +13,32 @@ class RunnersTableSeeder extends Seeder
     {
         DB::table('runners')->insert([
             [
-              'name' => 'cat1',
+              'name' => 'ねこまん',
               'src' => 'flyingneko.gif',
               'created_at' => date("Y-m-d H:i:s"),
               'updated_at' => date("Y-m-d H:i:s")
             ],
             [
-              'name' => 'dog1',
+              'name' => 'いっぬ',
               'src' => 'runningdog.gif',
               'created_at' => date("Y-m-d H:i:s"),
               'updated_at' => date("Y-m-d H:i:s")
             ],
             [
-              'name' => 'cat2',
-              'src' => 'flyingneko.gif',
+              'name' => 'うっま',
+              'src' => 'pica.gif',
               'created_at' => date("Y-m-d H:i:s"),
               'updated_at' => date("Y-m-d H:i:s")
             ],
             [
-              'name' => 'dog2',
-              'src' => 'runningdog.gif',
+              'name' => 'やまだ',
+              'src' => 'yamada.gif',
               'created_at' => date("Y-m-d H:i:s"),
               'updated_at' => date("Y-m-d H:i:s")
             ],
             [
-              'name' => 'cat3',
-              'src' => 'flyingneko.gif',
+              'name' => 'バブ',
+              'src' => 'yanmi.gif',
               'created_at' => date("Y-m-d H:i:s"),
               'updated_at' => date("Y-m-d H:i:s")
             ]

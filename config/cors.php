@@ -13,11 +13,10 @@ return [
     */
    
     'supportsCredentials' => true,
-    'allowedOrigins' => ['*', 'http://localhost:*', 'http://192.168.1.8:3000', 'https://mogataro-nuxt-sample-app.herokuapp.com'],
+    'allowedOrigins' => ['http://localhost:*', env('Allowed_Origin1', 'http://localhost:*'), env('Allowed_Origin2', 'http://localhost:*')],
     'allowedOriginsPatterns' => [],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['*'],
     'exposedHeaders' => [],
-    'maxAge' => 0,
-
+    'maxAge' => 0
 ];
