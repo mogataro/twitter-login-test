@@ -55,8 +55,6 @@ class AchievementController extends Controller
             // 勝率
             $win_rate = $rank1_count * 100 / $race_count;
 
-            logger($win_rate);
-
             Achievement::updateOrCreate(
                 ['runner_id' => $runner_id],
                 [
