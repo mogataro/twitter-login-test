@@ -35,7 +35,6 @@ class RaceResultsController extends Controller
         $raceResult->rank4 = $request->rank4;
         $raceResult->rank5 = $request->rank5;
         $raceResult->save();
-        return $this->index();
     }
 
     /**
