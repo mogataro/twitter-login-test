@@ -15,7 +15,7 @@ class RaceResultsController extends Controller
      */
     public function index()
     {
-        $result = RaceResult::latest()->take(3)->get()->sortBy('created_at')->values();
+        $result = RaceResult::latest()->take(100)->get()->sortBy('created_at')->values();
         return $result;
     }
 
