@@ -20,6 +20,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => ['api']], function(){
+    // Route::get('auth/twitter', 'Auth\SocialAuthController@redirectToProvider');
+    // Route::get('auth/twitter/callback', 'Auth\SocialAuthController@handleProviderCallback');
+    // Route::get('auth/twitter/logout', 'Auth\SocialAuthController@logout');
+
     Route::resource('articles', 'Api\ArticlesController', ['except' => ['create', 'edit']]);
     Route::resource('runners', 'Api\RunnersController', ['except' => ['create', 'edit']]);
     Route::resource('raceresult', 'Api\RaceResultsController', ['except' => ['create', 'update', 'edit']]);
